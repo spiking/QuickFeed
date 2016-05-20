@@ -1953,6 +1953,53 @@ input[type="radio"] + label:before {
 }
 
 
+/* Video */
+
+.video {
+    border-radius: 3px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.video img {
+    border-radius: 3px;
+    display: block;
+}
+
+.video.left {
+    float: left;
+    margin: 0 2em 2em 0;
+    top: 0.25em;
+}
+
+.video.right {
+    float: right;
+    margin: 0 0 2em 2em;
+    top: 0.25em;
+}
+
+.video.left,
+.video.right {
+    max-width: 40%;
+}
+
+.video.left img,
+.video.right img {
+    width: 100%;
+}
+
+.video.fit {
+    display: block;
+    margin: 0 0 2em 0;
+    width: 100%;
+}
+
+.video.fit img {
+    width: 100%;
+}
+
+
 /* List */
 
 ol {
@@ -3719,13 +3766,11 @@ body.is-mobile #main > header {
 /* Landing */
 
 body.landing #page-wrapper {
-    
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/space-bg.png");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/space-bg.png");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/space-bg.png");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/space-bg.png");
-
-/*    background-image: url("../../images/space-bg.png"); */
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/space-bg.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/space-bg.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/space-bg.png");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/space-bg.png");
+    /*    background-image: url("../../images/space-bg.png"); */
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -3743,10 +3788,10 @@ body.is-mobile.landing #page-wrapper {
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
-    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/banner.jpg");
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/space-bg.png");
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/space-bg.png");
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/space-bg.png");
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/space-bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3754,4 +3799,9 @@ body.is-mobile.landing .wrapper.style4 {
 
 body.is-mobile.landing #footer {
     background-color: #1d242a;
+}
+
+video {
+    width: 100% !important;
+    height: auto !important;
 }
